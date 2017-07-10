@@ -171,21 +171,21 @@ void Profile::useFallback()
     setProperty(MouseWheelZoomEnabled, true);
 
     setProperty(KeyBindings, QStringLiteral("default"));
-    setProperty(ColorScheme, QStringLiteral("Linux")); //use DarkPastels when is start support blue ncurses UI properly
+    setProperty(ColorScheme, QStringLiteral("Wreathe")); //use DarkPastels when is start support blue ncurses UI properly
     setProperty(Font, QFontDatabase::systemFont(QFontDatabase::FixedFont));
 
-    setProperty(HistoryMode, Enum::FixedSizeHistory);
+    setProperty(HistoryMode, Enum::UnlimitedHistory);
     setProperty(HistorySize, 1000);
     setProperty(ScrollBarPosition, Enum::ScrollBarRight);
     setProperty(ScrollFullPage, false);
 
-    setProperty(FlowControlEnabled, true);
+    setProperty(FlowControlEnabled, false);
     setProperty(UrlHintsModifiers, 0);
     setProperty(BlinkingTextEnabled, true);
     setProperty(UnderlineLinksEnabled, true);
     setProperty(UnderlineFilesEnabled, false);
     setProperty(OpenLinksByDirectClickEnabled, false);
-    setProperty(CtrlRequiredForDrag, true);
+    setProperty(CtrlRequiredForDrag, false);
     setProperty(AutoCopySelectedText, false);
     setProperty(TrimTrailingSpacesInSelectedText, false);
     setProperty(DropUrlsAsText, false);
@@ -194,10 +194,10 @@ void Profile::useFallback()
     setProperty(MiddleClickPasteMode, Enum::PasteFromX11Selection);
     setProperty(TripleClickMode, Enum::SelectWholeLine);
 
-    setProperty(BlinkingCursorEnabled, false);
+    setProperty(BlinkingCursorEnabled, true);
     setProperty(BidiRenderingEnabled, true);
     setProperty(LineSpacing, 0);
-    setProperty(CursorShape, Enum::BlockCursor);
+    setProperty(CursorShape, Enum::UnderlineCursor);
     setProperty(UseCustomCursorColor, false);
     setProperty(CustomCursorColor, QColor(Qt::black));
     setProperty(BellMode, Enum::NotifyBell);
