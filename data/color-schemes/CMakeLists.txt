@@ -14,5 +14,6 @@ install( FILES
          RedOnBlack.colorscheme
          Solarized.colorscheme
          SolarizedLight.colorscheme
+         Wreathe.colorscheme
          DESTINATION
          ${KDE_INSTALL_DATADIR}/konsole )
